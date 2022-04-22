@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: '3'
+services:
+  web:
+    image: node-docker
+    volumes:
+      - expressServer:/app
+    command: npm start
+    ports:
+      - "80:3000"
+volumes:
+  expressServer:

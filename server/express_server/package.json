@@ -1,0 +1,58 @@
+{
+  "name": "proyecto-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www",
+    "lint": "npm run lint",
+    "start": "node ./bin/www",
+    "test": "jest --detectOpenHandles --silent --verbose"
+  },
+  "dependencies": {
+    "@admin-bro/express": "^3.1.0",
+    "@admin-bro/sequelize": "^1.2.1",
+    "@popperjs/core": "^2.9.2",
+    "admin-bro": "^3.4.0",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.0.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "googleapis": "^75.0.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-sass-middleware": "0.11.0",
+    "nodemailer": "^6.6.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.2",
+    "tslib": "^2.2.0",
+    "validator": "^13.6.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "watch": [
+      "public/",
+      "routes/",
+      "views/",
+      "models/",
+      "configs/",
+      "js/",
+      "./"
+    ],
+    "delay": "1000"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.4"
+  }
+}
